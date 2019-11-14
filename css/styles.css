@@ -1,0 +1,78 @@
+/* CSS for the documentation page project
+Created by Eva Nanyonga
+*/
+
+* {
+	font-family: 'Helvetica', Garamond, sans-serif;
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+}
+
+/* Navigation CSS */
+#navbar {
+	width: 20%;
+    height: 200%;
+    float: left;
+    position: absolute;
+    background-color: #e1e1d1;
+    padding: 10px 20px;
+}
+
+#main-doc {
+	position: absolute;
+    float: right;
+    margin-left: 20%;
+    padding: 30px 70px;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+	line-height: 2em;
+}
+
+p {
+	line-height: 1.5em;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+code {
+	font-family: monospace;
+	margin: 5px 0;
+}
+
+.highlight {
+	color: #fff;
+	display: block;
+	background-color: #999966;
+	padding: 20px;
+	width: 500px;
+	border-radius: 5px;
+}
+
+/*@media screen and (min-width: 768px) {
+	#navbar {
+	    height: 480%;
+}*/
+
+@media screen and (max-width: 320px) {
+	#navbar {
+	    height: 105%;
+}
+
+@media only screen and (min-width: 1200px) {
+	#navbar {
+	    height: 200%;
+	}
+}
