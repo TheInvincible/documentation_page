@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Python Technical Documentation</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
 	<main id="main-doc">
@@ -27,7 +27,7 @@
 		
 			<h2 id="intro">Introduction to Python</h2>
 
-				<p>Python is a high level general-purpose programming language. It uses a multi-paradigm approach, meaning it supports procedural, object-oriented, and some functional programming constructs.<br><br>It was created by Guido van Rossum as a successor to another language (called ABC) between 1985 and 1990, and is currently used on a large array of domains like web development, desktop applications, data science, DevOps, and automation/productivity.</p>
+				<p>Python is a high level general-purpose programming language. It uses a multi-paradigm approach, meaning it supports procedural, object-oriented, and some functional programming constructs.<br/><br/>It was created by Guido van Rossum as a successor to another language (called ABC) between 1985 and 1990, and is currently used on a large array of domains like web development, desktop applications, data science, DevOps, and automation/productivity.</p>
 
 			<h2 id="install-python">Installing Python</h2>
 
@@ -42,10 +42,10 @@
 
 			<h2 id="first-program">Writing your first Python Program</h2>
 
-				<p>To write a python program, you can use the python shell, your terminal or a text editor. <br><br>
+				<p>To write a python program, you can use the python shell, your terminal or a text editor. <br/><br/>
 				To run the python shell, simply go to your terminal and type <code>python3</code> or simply <code>python</code> for windows users</p>
 
-				<p>Now that we've seen how to run the python shell, we can go ahead and write our first python program <br><code class="highlight">print('Hello World!')</code><br> There! you just wrote your first python program</p>
+				<p>Now that we've seen how to run the python shell, we can go ahead and write our first python program <br><code class="highlight">print('Hello World!')</code><br/> There! you just wrote your first python program</p>
 
 		</section>
 
@@ -56,13 +56,37 @@
 
 				<p>Now you know how to interact with the Python interpreter and execute Python code. It’s time to dig into the Python language. First up is a discussion of the basic data types that are built into Python. These are Integers, Strings, Floats or floating point numbers and Booleans</p>
 
-				<p><strong>Integers</strong> are what, in layman terms be called numbers e.g 1 is an integer, 32 is an integer and so on. An integer type in python is called <code>int</code><br><strong>Strings</strong> are sequences of character data. The string type in Python is called <code>str</code>. String literals may be delimited using either single or double quotes. An Example of a string literal is our first python program 'Hello World!'.<br><strong>Floats or floating point numbers</strong> are specified with a decimal point e.g. 4.5 is a float.</p>
+				<p><strong>Integers</strong> are what, in layman terms be called numbers e.g 1 is an integer, 32 is an integer and so on. An integer type in python is called <code>int</code><br/><strong>Strings</strong> are sequences of character data. The string type in Python is called <code>str</code>. String literals may be delimited using either single or double quotes. An Example of a string literal is our first python program 'Hello World!'.<br/><strong>Floats or floating point numbers</strong> are specified with a decimal point e.g. 4.5 is a float.</p>
 
 			<h2 id="data-structures">Data Structures</h2>
 
 				<p>Data structures are a way of organizing and storing data so that they can be accessed and worked with efficiently. They define the relationship between the data, and the operations that can be performed on the data. They include Lists, Tuples, Arrays, Sets, Dictionaries, Files</p>
 
-				<p>The most commonly used non-primitive data-types are Lists. Lists in Python are used to store collection of heterogeneous items. These are mutable, which means that you can change their content without changing their identity. You can recognize lists by their square brackets [ and ] that hold elements, separated by a comma ,. Lists are built into Python: you do not need to invoke them separately.<br/> You can read more about non-primitive data-types <a href="https://www.datacamp.com/community/tutorials/data-structures-python"></a> here</p>
+				<p>The most commonly used non-primitive data-types are Lists. Lists in Python are used to store collection of heterogeneous items. These are mutable, which means that you can change their content without changing their identity. You can recognize lists by their square brackets [ and ] that hold elements, separated by a comma ,. Below are two lists, one of numbers and another of strings
+					<code class="highlight">	list_num = [1,2,45,6,7,2,90,23,435]
+							list_char = ['c','o','o','k','i','e']
+					</code> 
+
+				Lists are built into Python: you do not need to invoke them separately.
+					<br/> <br/>
+				Another quite versatile data-structure is called an array. An Array is a container which can hold a fix number of items and these items should be of the same type. Most of the data structures make use of arrays to implement their algorithms for example, we can treat lists as arrays. e.g 
+					<code class="highlight">
+						a = [1, 3.5, "Hello"] 
+					</code>
+					<br/>
+					We then import the array module. <code>import array as arr </code> 
+					<br/>
+					<code class="highlight">
+						a = arr.array('i', [1, 2, 3])
+						print ("The new created array is : ", end =" ") 
+							for i in range (0, 3): 
+							    print (a[i], end =" ") 
+							print()
+
+					</code>	
+					<br/>
+					You can read more about non-primitive data-types <a href="https://www.datacamp.com/community/tutorials/data-structures-python"></a> here
+				</p>
 
 			<h2 id="regular">Modules</h2>
 				<p>A module is a file containing Python definitions and statements. The file name is the module name with the suffix .py appended. Within a module, the module’s name (as a string) is available as the value of the global variable __name__. For instance, use your favorite text editor to create a file called fibo.py in the current directory with the following contents:
