@@ -16,14 +16,14 @@ Created by Eva Nanyonga
     float: left;
     position: absolute;
     background-color: #e1e1d1;
-    padding: 10px 20px;
+    padding: 10px 0px;
 }
 
 #main-doc {
 	position: absolute;
     float: right;
     margin-left: 20%;
-    padding: 30px 70px;
+    padding: 30px 60px;
 }
 
 h1 {
@@ -41,6 +41,13 @@ p {
 
 ul {
 	list-style: none;
+}
+
+li {
+	border-top: #e1e1d1 1px solid;
+	padding: 10px 20px;
+	background-color: #999966;
+	color: #e1e1d1;
 }
 
 a {
@@ -64,18 +71,24 @@ code {
 	border-radius: 5px;
 }
 
-/*@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
 	#navbar {
-	    height: 480%;
-}*/
+	    height: 400%;
+		}
+		h1 {
+			font-size: 99%;
+			padding: 10px;
+		}
+}
 
 @media screen and (max-width: 320px) {
 	#navbar {
 	    height: 105%;
+		}
 }
 
 @media only screen and (min-width: 1200px) {
 	#navbar {
-	    height: 200%;
+	    height: 295%;
 	}
 }
