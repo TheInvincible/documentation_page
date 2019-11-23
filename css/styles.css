@@ -12,7 +12,7 @@ Created by Eva Nanyonga
 /* Navigation CSS */
 #navbar {
 	width: 20%;
-    height: 200%;
+    height: 230%;
     float: left;
     position: absolute;
     background-color: #e1e1d1;
@@ -47,6 +47,10 @@ a {
 	text-decoration: none;
 }
 
+pre {
+	display: block;
+}
+
 code {
 	font-family: monospace;
 	margin: 5px 0;
@@ -57,7 +61,6 @@ code {
 	display: block;
 	background-color: #999966;
 	padding: 20px;
-	width: 500px;
 	border-radius: 5px;
 }
 
